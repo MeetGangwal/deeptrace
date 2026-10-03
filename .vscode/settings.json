@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "/Users/gangwal/jupyter-env/bin/python",
+  "python.analysis.extraPaths": [
+    "/Users/gangwal/jupyter-env/lib/python3.14/site-packages"
+  ]
+}

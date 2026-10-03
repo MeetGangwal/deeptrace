@@ -1,0 +1,21 @@
+# Data and models (to keep repository size low)
+data/
+dataset/
+models/*.pt
+models/*.pth
+models/*.onnx
+
+# Python cache & virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.env
+jupyter-env/
+venv/
+env/
+.venv/
+
+# macOS system files
+.DS_Store
+**/.DS_Store

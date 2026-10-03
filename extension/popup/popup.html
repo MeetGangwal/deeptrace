@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepTrace</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>DeepTrace</h2>
+            <span id="status-badge" class="badge off">OFF</span>
+        </div>
+
+        <p class="description">AI-powered media authentication.</p>
+
+        <button id="toggle-btn" class="btn-start">Start Scanning</button>
+
+        <div id="metrics-panel" class="metrics-panel hidden">
+            <div class="metric-row">
+                <span class="metric-label">Prediction:</span>
+                <span id="prediction-text" class="metric-value">Waiting for media...</span>
+            </div>
+
+            <div class="metric-row">
+                <span class="metric-label">AI Confidence:</span>
+                <div class="progress-bar">
+                    <div id="confidence-fill" class="progress-fill"></div>
+                </div>
+                <span id="confidence-text" class="metric-value">0%</span>
+            </div>
+
+            <div id="signals-container" class="hidden">
+                <span class="metric-label">Detection Signals:</span>
+                <ul id="signals-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepTrace</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>DeepTrace</h2>
+            <span id="status-badge" class="badge off">OFF</span>
+        </div>
+
+        <p class="description">AI-powered media authentication.</p>
+
+        <button id="toggle-btn" class="btn-start">Start Scanning</button>
+
+        <div id="metrics-panel" class="metrics-panel hidden">
+            <div class="metric-row">
+                <span class="metric-label">Prediction:</span>
+                <span id="prediction-text" class="metric-value">Waiting for media...</span>
+            </div>
+
+            <!-- Dual Confidence Bars -->
+            <div class="confidence-container">
+                <div class="metric-row">
+                    <span class="metric-label">Real:</span>
+                    <div class="progress-bar">
+                        <div id="real-fill" class="progress-fill real-color"></div>
+                    </div>
+                    <span id="real-text" class="metric-value">0%</span>
+                </div>
+
+                <div class="metric-row">
+                    <span class="metric-label">AI/Fake:</span>
+                    <div class="progress-bar">
+                        <div id="fake-fill" class="progress-fill fake-color"></div>
+                    </div>
+                    <span id="fake-text" class="metric-value">0%</span>
+                </div>
+            </div>
+
+            <div id="signals-container" class="hidden">
+                <span class="metric-label">Detection Signals:</span>
+                <ul id="signals-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
